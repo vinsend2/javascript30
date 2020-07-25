@@ -22,7 +22,7 @@ Original files from @wesbos and solutions can be found [here](https://github.com
 8. ~~Fun with HTML5 Canvas~~
 //Решил немного расширять функционал стандартных заданий и добавлять что-то свое. 
 В данном случае добавил возможность выбирать цвет для рисования.
-9. Dev Tools Domination~~
+9. ~~Dev Tools Domination~~
 10. Hold Shift and Check Checkboxes~~
 11. Custom Video Player~~
 12. Key Sequence Detection~~
