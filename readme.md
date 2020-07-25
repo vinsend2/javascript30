@@ -15,7 +15,7 @@ Original files from @wesbos and solutions can be found [here](https://github.com
 // Свойство dataset.sizing пришлось смотреть в ответах засчитаем 50/50 :)
 4. ~~Array Cardio, Day 1~~
 //8 Сделал через forEach, сокращенный синтаксис if/else не использую :(
-5. Flex  Panel Gallery~~
+5. ~~Flex  Panel Gallery~~
 6. Ajax Type Ahead~~
 7. Array Cardio, Day 2~~
 8. Fun with HTML5 Canvas~~
