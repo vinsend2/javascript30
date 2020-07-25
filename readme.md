@@ -18,7 +18,7 @@ Original files from @wesbos and solutions can be found [here](https://github.com
 5. ~~Flex  Panel Gallery~~
 6. ~~Ajax Type Ahead~~ 
 //Переписал почти весь код, певый вариант решения работал максимально криво
-7. Array Cardio, Day 2~~
+7. ~~Array Cardio, Day 2~~
 8. Fun with HTML5 Canvas~~
 9. Dev Tools Domination~~
 10. Hold Shift and Check Checkboxes~~
