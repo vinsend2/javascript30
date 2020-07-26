@@ -7,6 +7,8 @@ const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
 
+
+
 /* Build out functions */
 function togglePlay() {
   const method = video.paused ? 'play' : 'pause';
@@ -36,6 +38,7 @@ function scrub(e) {
   const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
   video.currentTime = scrubTime;
 }
+
 
 /* Hook up the event listeners */
 video.addEventListener('click', togglePlay);
