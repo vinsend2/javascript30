@@ -23,7 +23,7 @@ Original files from @wesbos and solutions can be found [here](https://github.com
 //Решил немного расширять функционал стандартных заданий и добавлять что-то свое. 
 В данном случае добавил возможность выбирать цвет для рисования.
 9. ~~Dev Tools Domination~~
-10. Hold Shift and Check Checkboxes~~
+10. ~~Hold Shift and Check Checkboxes~~
 11. Custom Video Player~~
 12. Key Sequence Detection~~
 13. Slide in on Scroll~~
