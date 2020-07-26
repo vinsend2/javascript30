@@ -26,7 +26,8 @@ Original files from @wesbos and solutions can be found [here](https://github.com
 10. ~~Hold Shift and Check Checkboxes~~
 11. ~~Custom Video Player~~
 //Просто перепечатал с гайда. Все понятно, но с нуля писать чтото такое смысла вижу мало.
-12. Key Sequence Detection~~
+12. ~~Key Sequence Detection~~
+//Взял идею с Кейлогером вместо дефолт задания. По кнопки RESET обновляет инпут и отправляет данные на условный сервер.
 13. Slide in on Scroll~~
 14. JavaScript References vs. Copying~~
 15. LocalStorage~~

@@ -1,24 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Key Detection</title>
-  <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
-</head>
-<body>
-<script>
-  const pressed = [];
-  const secretCode = 'wesbos';
-  window.addEventListener('keyup', (e)=> {
-      console.log(e.key);
-      pressed.push(e.key);
-      pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
-      if (pressed.join('').includes(secretCode)) {
-          console.log('DinG DING');
-          cornify_add();
-      }
-      console.log(pressed);
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Key Detection</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="define">
+            <p>Кейлогер или клавиатурный шпион - программа, которая считывает нажатие клавиш на клавиатуре.</p>
+            <p>Нажмите любую клавишу...</p>
+            <div class="input">
+                <p class="rede"></p>
+                <p class="input-text"></p>
+                <button class="hide">reset</button>
+            </div>
+        </div>
+<script> 
+const inputText = document.querySelector(".input-text");
+const button = document.querySelector("button");
+const rede = document.querySelector(".rede");
+
+let pressed = [];
+
+window.addEventListener("keydown", (event) => {
+    pressed.push(event.key);
+    rede.innerText = "Вы ввели:";
+    button.classList.remove("hide");
+    inputText.innerText = pressed.join("");
+    if(pressed.length > 8) {
+        pressed.splice(0, 1);
+    }
+});
+
+button.addEventListener("click", function() {
+  try {
+  const response = fetch('http://localhost:3000/requests`', {
+    method: 'POST', // или 'PUT'
+    body: JSON.stringify(pressed), // данные могут быть 'строкой' или {объектом}!
+    headers: {
+      'Content-Type': 'application/json'
+    }
   });
-</script>
-</body>
+  const json = response.json();
+  console.log('Успех:', JSON.stringify(json));
+} catch (error) {
+  console.error('Ошибка:', error);
+}
+    pressed = [];
+    inputText.innerText = "";
+    rede.innerText = "";
+    button.classList.add("hide");
+});
+
+        
+</script>>
+    </body>
 </html>
+
