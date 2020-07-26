@@ -34,15 +34,15 @@ window.addEventListener("keydown", (event) => {
 
 button.addEventListener("click", function() {
   try {
-  const response = fetch('http://localhost:3000/requests`', {
-    method: 'POST', // или 'PUT'
-    body: JSON.stringify(pressed), // данные могут быть 'строкой' или {объектом}!
+  const response = fetch('http://localhost:3000/posts', {
+    method: 'POST', 
+    body: JSON.stringify(pressed), 
     headers: {
       'Content-Type': 'application/json'
     }
   });
-  const json = response.json();
-  console.log('Успех:', JSON.stringify(json));
+  
+  console.log('Успех:', JSON.stringify(pressed));
 } catch (error) {
   console.error('Ошибка:', error);
 }
