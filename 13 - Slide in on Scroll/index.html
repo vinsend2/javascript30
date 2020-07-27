@@ -4,6 +4,35 @@
   <meta charset="UTF-8">
   <title>Document</title>
 </head>
+<style>
+  .align-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.align-right {
+    float: right;
+    margin-left: 20px;
+}
+
+.slide-in {
+    opacity: 0;
+    transition: all .5s;
+}
+
+.align-left.slide-in {
+    transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+    transform: translateX(30%) scale(0.95);
+}
+
+.slide-in.active {
+    opacity:1;
+    transform:translateX(0%) scale(1);
+}
+</style>
 <body>
 
   <div class="site-wrap">
@@ -43,40 +72,27 @@
   </div>
 
   <script>
-    function debounce(func, wait = 20, immediate = true) {
-      var timeout;
-      return function() {
-        var context = this, args = arguments;
-        var later = function() {
-          timeout = null;
-          if (!immediate) func.apply(context, args);
-        };
-        var callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func.apply(context, args);
-      };
-    };
+window.addEventListener("scroll", animation);
 
-    const sliderImages = document.querySelectorAll('.slide-in');
+const imgs = document.querySelectorAll("img");
 
-    function checkSlide() {
-      sliderImages.forEach(sliderImage => {
-        // half way through the image
-        const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
-        // bottom of the image
-        const imageBottom = sliderImage.offsetTop + sliderImage.height;
-        const isHalfShown = slideInAt > sliderImage.offsetTop;
-        const isNotScrolledPast = window.scrollY < imageBottom;
-        if (isHalfShown && isNotScrolledPast) {
-          sliderImage.classList.add('active');
-        } else {
-          sliderImage.classList.remove('active');
-        }
-      });
-    }
+function checkViewport(a) {
+    let b = a.getBoundingClientRect();
+    return -0.5 * a.scrollHeight < b.top && b.top + 0.5 * a.scrollHeight < window.innerHeight;
+};
 
-    window.addEventListener('scroll', debounce(checkSlide));
+
+function animation() {
+    imgs.forEach(function(img) {
+        if(checkViewport(img)) {
+          img.classList.add("active")
+         }
+         else {
+           img.classList.remove("active")
+         }
+    });
+}
+
 
   </script>
 

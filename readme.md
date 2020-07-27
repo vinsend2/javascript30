@@ -28,7 +28,8 @@ Original files from @wesbos and solutions can be found [here](https://github.com
 //Просто перепечатал с гайда. Все понятно, но с нуля писать чтото такое смысла вижу мало.
 12. ~~Key Sequence Detection~~
 //Взял идею с Кейлогером вместо дефолт задания. По кнопки RESET обновляет инпут и отправляет данные на условный сервер.
-13. Slide in on Scroll~~
+13. ~~Slide in on Scroll~~
+//Сделал на основе css анимаций, так как это позволило в 2 раза сократить JS код.
 14. JavaScript References vs. Copying~~
 15. LocalStorage~~
 16. Mouse Move Shadow~~
