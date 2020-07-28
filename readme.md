@@ -30,8 +30,9 @@ Original files from @wesbos and solutions can be found [here](https://github.com
 //Взял идею с Кейлогером вместо дефолт задания. По кнопки RESET обновляет инпут и отправляет данные на условный сервер.
 13. ~~Slide in on Scroll~~
 //Сделал на основе css анимаций, так как это позволило в 2 раза сократить JS код.
-14. JavaScript References vs. Copying~~
-15. LocalStorage~~
+14. ~~JavaScript References vs. Copying~~
+15. ~~LocalStorage~~
+//Немного распишил предложенный функционал и переписал код.
 16. Mouse Move Shadow~~
 17. Sort Without Articles~~
 18. Adding Up Times with Reduce~~
