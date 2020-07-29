@@ -37,7 +37,8 @@ Original files from @wesbos and solutions can be found [here](https://github.com
 17. ~~Sort Without Articles~~
 18. ~~Adding Up Times with Reduce~~
 //Добавил в задание часы и все вылилось в жуткий код прямиком с помойки. Надеюсь никто не увидит и когда-нибудь переделаю нормально ))
-19. Webcam Fun~~
+19. ~~Webcam Fun~~
+//Вебки нет, поэтому особо не вникал - просто перепечал код и +- понял как он работает.
 20. Speech Detection~~
 21. Geolocation~~
 22. Follow Along Link Highlighter~~
