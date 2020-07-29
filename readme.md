@@ -35,7 +35,8 @@ Original files from @wesbos and solutions can be found [here](https://github.com
 //Немного расширил предложенный функционал и переписал код.
 16. ~~Mouse Move Shadow~~
 17. ~~Sort Without Articles~~
-18. Adding Up Times with Reduce~~
+18. ~~Adding Up Times with Reduce~~
+//Добавил в задание часы и все вылилось в жуткий код прямиком с помойки. Надеюсь никто не увидит и когда-нибудь переделаю нормально ))
 19. Webcam Fun~~
 20. Speech Detection~~
 21. Geolocation~~

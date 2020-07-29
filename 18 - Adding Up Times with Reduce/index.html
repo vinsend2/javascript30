@@ -144,7 +144,7 @@
     <li data-time="3:44">
       Video 46
     </li>
-    <li data-time="3:44">
+    <li data-time="3:00">
       Video 47
     </li>
     <li data-time="4:36">
@@ -159,7 +159,7 @@
     <li data-time="6:10">
       Video 51
     </li>
-    <li data-time="2:14">
+    <li data-time="2:2:14">
       Video 52
     </li>
     <li data-time="3:44">
@@ -177,7 +177,7 @@
     <li data-time="1:56">
       Video 57
     </li>
-    <li data-time="4:04">
+    <li data-time="1:4:04">
       Video 58
     </li>
   </ul>
@@ -185,15 +185,25 @@
 
   const timeNodes = Array.from(document.querySelectorAll('[data-time]'));
 
-  const seconds = timeNodes
-    .map(node => node.dataset.time)
-    .map(timeCode => {
-      const [mins, secs] = timeCode.split(':').map(parseFloat);
-      return (mins * 60) + secs;
-    })
-    .reduce((total, vidSeconds) => total + vidSeconds);
+  const datatime = timeNodes.map(node => node.dataset.time);
 
-    let secondsLeft = seconds;
+  const sec = datatime.map(node => {
+    if (node.length > 5) {
+      const [hours, mins, secs] = node.split(':').map(parseFloat);         
+      const node1 = (hours * 3600) + (mins * 60) + secs;   
+      return node1;
+    } 
+    else {
+      const [mins, secs] = node.split(':').map(parseFloat);            
+      const node2 = (mins * 60) + secs; 
+      return node2;
+    }  
+    return node1 + node2;
+    })
+    .reduce((total, currentValue) => total + currentValue);
+
+ 
+    let secondsLeft = sec;
     const hours = Math.floor(secondsLeft / 3600);
     secondsLeft = secondsLeft % 3600;
 
