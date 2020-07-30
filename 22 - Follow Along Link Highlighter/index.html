@@ -2,54 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>👀👀👀Follow Along Nav</title>
+  <title>Follow Along Nav</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+   <div class="header">
+  
+    </div>
+    
+    <div class="wrapper">
     <nav>
       <ul class="menu">
-        <li><a href="">Home</a></li>
-        <li><a href="">Order Status</a></li>
-        <li><a href="">Tweets</a></li>
-        <li><a href="">Read Our History</a></li>
-        <li><a href="">Contact Us</a></li>
+          <li><a href="">Алиса&nbsp;в&nbsp;стране&nbsp;чудес:</a></li>
+          <li><a href="">цитаты&nbsp;из&nbsp;книги</a></li>
       </ul>
     </nav>
-
-    <div class="wrapper">
-      <p>Lorem ipsum dolor sit amet, <a href="">consectetur</a> adipisicing elit. Est <a href="">explicabo</a> unde natus necessitatibus esse obcaecati distinctio, aut itaque, qui vitae!</p>
-      <p>Aspernatur sapiente quae sint <a href="">soluta</a> modi, atque praesentium laborum pariatur earum <a href="">quaerat</a> cupiditate consequuntur facilis ullam dignissimos, aperiam quam veniam.</p>
-      <p>Cum ipsam quod, incidunt sit ex <a href="">tempore</a> placeat maxime <a href="">corrupti</a> possimus <a href="">veritatis</a> ipsum fugit recusandae est doloremque? Hic, <a href="">quibusdam</a>, nulla.</p>
-      <p>Esse quibusdam, ad, ducimus cupiditate <a href="">nulla</a>, quae magni odit <a href="">totam</a> ut consequatur eveniet sunt quam provident sapiente dicta neque quod.</p>
-      <p>Aliquam <a href="">dicta</a> sequi culpa fugiat <a href="">consequuntur</a> pariatur optio ad minima, maxime <a href="">odio</a>, distinctio magni impedit tempore enim repellendus <a href="">repudiandae</a> quas!</p>
+    
+    <p>Нужно бежать со всех ног, чтобы только <a href="">оставаться</a> на месте, а чтобы куда-то попасть, надо бежать как минимум вдвое <a href="">быстрее!</a></p>
+    <p>Мало кто находит выход, некоторые <a href="">не&nbsp;видят</a> его, даже если найдут, а многие даже <a href="">не&nbsp;ищут</a>.</p>
+    <p>— Серьёзное <a href="">отношение</a> к чему бы то ни было в этом мире является роковой <a href="">ошибкой</a>.<br>
+    — А <a href="">жизнь</a> – это серьёзно?<br>
+    — О да, жизнь – это <a href="">серьёзно</a>! Но не очень…</p>
+    <p>Видала я такую чепуху, по сравнению с которой эта чепуха — <a href="">толковый&nbsp;словарь</a>!</p>
+    <p>Лучший способ объяснить – это <a href="">самому&nbsp;сделать</a>.</p>
+        <p>    — Нельзя поверить в <a href="">невозможное!</a><br>— Просто у тебя мало <a href="">опыта</a>, – заметила Королева. – В твоем возрасте я уделяла этому полчаса каждый день! В иные дни я успевала поверить в десяток <a href="">невозможностей</a> до завтрака!</p>
     </div>
 
-<script>
-  const triggers = document.querySelectorAll('a');
-  const highlight = document.createElement('span');
-  highlight.classList.add('highlight');
-  document.body.appendChild(highlight);
-
-  function highlightLink() {
-    const linkCoords = this.getBoundingClientRect();
-    console.log(linkCoords);
-    const coords = {
-      width: linkCoords.width,
-      height: linkCoords.height,
-      top: linkCoords.top + window.scrollY,
-      left: linkCoords.left + window.scrollX
-    };
-
-    highlight.style.width = `${coords.width}px`;
-    highlight.style.height = `${coords.height}px`;
-    highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`;
-
-  }
-
-  triggers.forEach(a => a.addEventListener('mouseenter', highlightLink));
-
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
 
+<!-- http://www.justinbird.com/ -->
