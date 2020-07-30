@@ -39,7 +39,7 @@ Original files from @wesbos and solutions can be found [here](https://github.com
 //Добавил в задание часы и все вылилось в жуткий код прямиком с помойки. Надеюсь никто не увидит и когда-нибудь переделаю нормально ))
 19. ~~Webcam Fun~~
 //Вебки нет, поэтому особо не вникал - просто перепечал код и +- понял как он работает.
-20. Speech Detection~~
+20. ~~Speech Detection~~
 21. Geolocation~~
 22. Follow Along Link Highlighter~~
 23. Speech Synthesis~~
