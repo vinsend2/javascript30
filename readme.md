@@ -40,7 +40,8 @@ Original files from @wesbos and solutions can be found [here](https://github.com
 19. ~~Webcam Fun~~
 //Вебки нет, поэтому особо не вникал - просто перепечал код и +- понял как он работает.
 20. ~~Speech Detection~~
-21. Geolocation~~
+21. ~~Geolocation~~
+//Добавил вывод карты через static.api Яндекс карт.
 22. Follow Along Link Highlighter~~
 23. Speech Synthesis~~
 24. Sticky Nav~~
