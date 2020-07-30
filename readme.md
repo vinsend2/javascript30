@@ -42,7 +42,7 @@ Original files from @wesbos and solutions can be found [here](https://github.com
 20. ~~Speech Detection~~
 21. ~~Geolocation~~
 //Добавил вывод карты через static.api Яндекс карт.
-22. Follow Along Link Highlighter~~
+22. ~~Follow Along Link Highlighter~~
 23. Speech Synthesis~~
 24. Sticky Nav~~
 25. Event Capture, Propagation, Bubbling, and Once~~
