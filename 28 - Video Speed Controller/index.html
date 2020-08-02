@@ -20,19 +20,28 @@
   const bar = speed.querySelector('.speed-bar');
   const video = document.querySelector('.flex');
 
+
   function handleMove(e) {
-      const y = e.pageY - this.offsetTop;
-      const percent = y / this.offsetHeight;
-      const min = 0.4;
-      const max = 4;
-      const height = Math.round(percent * 100) + '%';
-      const playbackRate = percent * (max - min) + min;
+      let y = e.pageY - this.offsetTop;
+      let percent = y / this.offsetHeight;
+      let min = 0.4;
+      let max = 4;
+      let height = Math.round(percent * 100) + '%';
+      let playbackRate = percent * (max - min) + min;
       bar.style.height = height;
       bar.textContent = playbackRate.toFixed(2) + '×';
       video.playbackRate = playbackRate;
     }
 
-  speed.addEventListener('mousemove', handleMove);
+    
+    speed.onmousedown = function() { 
+      this.addEventListener(['mousemove'], handleMove);
+}
+  speed.onmouseup = function() { 
+      this.removeEventListener(['mousemove'], handleMove);
+}
+    speed.addEventListener(['click'], handleMove);
+      
 
 </script>
 </body>
