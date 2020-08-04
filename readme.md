@@ -45,10 +45,10 @@ Original files from @wesbos and solutions can be found [here](https://github.com
 22. ~~Follow Along Link Highlighter~~
 23. ~~Speech Synthesis~~
 24. ~~Sticky Nav~~
-25. //Event Capture, Propagation, Bubbling, and Once~~
-26. //Stripe Follow Along Nav~~
-27. //Click and Drag~~
-28. //Video Speed Controller~~
+25. ~~Event Capture, Propagation, Bubbling, and Once~~
+26. ~~Stripe Follow Along Nav~~
+27. ~~Click and Drag~~
+28. ~~Video Speed Controller~~
 //Немного переделал функционал - теперь скорость меняется только при зажатой клавише мыши.
-29. Countdown Timer~~
+29. ~~Countdown Timer~~
 30. Whack A Mole~~
