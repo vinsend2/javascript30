@@ -51,4 +51,4 @@ Original files from @wesbos and solutions can be found [here](https://github.com
 28. ~~Video Speed Controller~~
 //Немного переделал функционал - теперь скорость меняется только при зажатой клавише мыши.
 29. ~~Countdown Timer~~
-30. Whack A Mole~~
+30. ~~Whack A Mole~~
