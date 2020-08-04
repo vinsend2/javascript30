@@ -20,6 +20,17 @@ h1 {
   line-height:1;
   margin-bottom: 0;
 }
+button {
+  padding: 10px 40px;
+  margin: 20px 45%;
+  background-color: inherit;
+  font-size: 20px;
+  
+}
+
+button:focus {
+  outline: none; 
+}
 
 .score {
   background:rgba(255,255,255,0.2);
